@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html">
+
+	<h:head>
+		<title>JSF 2.0 Hello World</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"> </script>
+		<script>
+			$(document).ready(function() {
+				$("button").click(function() {
+					alert("Background color = " + $("p").css("background-color"));
+				});
+			});
+		</script>
+	</h:head>
+	
+	<h:body bgcolor="white">
+		<h3>JSF 2.0 Hello World Example</h3>
+
+		<p style="background-color:#ff0000">
+			Welcome #{helloBean.name}
+		</p>
+		<button>
+			Return background-color of p
+		</button>
+	</h:body>
+	
+</html>

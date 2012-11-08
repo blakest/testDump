@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link type="text/css" rel="stylesheet" href="/resources/css/bootstrap.css.jsf?ln=css" />
+		<link type="text/css" rel="stylesheet" href="/resources/css/bootstrap-responsive.css.jsf?ln=css" />
+		<title>TEST</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			body {
+				padding-top: 60px;
+				padding-bottom: 40px;
+			}
+			.sidebar-nav {
+				padding: 9px 0;
+			}
+		</style>
+
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]&gt;
+		&lt;script src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+		&lt;![endif]-->
+		<style></style>
+		<script src="/resources/js/bootstrap.js"></script>
+		<script src="/resources/js/bootstrap-dropdown.js"></script>
+	</head>
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+					<a class="brand" href="#">Project name</a>
+					<div class="nav-collapse">
+						<ul class="nav">
+							<li class="active">
+								<a href="/bootstrap.jsf">Home</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Admin<b class="caret"></b> </a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="/admin/roles">Rollen</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<div id="j_idt14" class="ui-datatable ui-widget">
+						<table>
+							<thead>
+								<tr>
+									<th id="j_idt14:j_idt15" class="ui-state-default">
+									<div class="ui-dt-c">
+										<span>Item</span>
+									</div></th>
+								</tr>
+							</thead><tfoot></tfoot>
+							<tbody id="j_idt14_data" class="ui-datatable-data ui-widget-content">
+								<tr data-ri="0" class="ui-widget-content ui-datatable-even">
+									<td>
+									<div class="ui-dt-c">
+										a
+									</div></td>
+								</tr>
+								<tr data-ri="1" class="ui-widget-content ui-datatable-odd">
+									<td>
+									<div class="ui-dt-c">
+										b
+									</div></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<script id="j_idt14_s" type="text/javascript">
+						$(function() {
+							PrimeFaces.cw('DataTable', 'widget_j_idt14', {
+								id : 'j_idt14'
+							});
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
